@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.side__bar {
+  background-color: #2c3e50;
+  width: fit-content;
+  height: 100vh;
+  position: relative;
+  transition: 400ms;
+  transform: translate(-101%);
+}
+
+.side__bar__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid white;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+}
+
+.side__bar__header h1 {
+  font-size: 1.2rem;
+  color: #f5f6fa;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.side__bar__button__open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  background-color: #2c3e50;
+  border: none;
+  position: absolute;
+  transform: translate(14rem, 1rem);
+}
+
+.side__bar__button__open__icon {
+  height: 22px;
+  width: 22px;
+  color: #f5f6fa;
+}
+
+.side__bar__button__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  background-color: #2c3e50;
+  border: none;
+  position: absolute;
+  transform: translate(10rem, 0.5rem);
+}
+
+.side__bar__button__close__icon {
+  height: 22px;
+  width: 22px;
+  color: #f5f6fa;
+}
+
+#profile {
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #f5f6fa;
+}
+
+.side__bar__menu {
+  margin-top: 3rem;
+  margin-left: -1rem;
+}
+
+.side__bar__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.side__bar__menu li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f5f6fa;
+  transition: 500ms;
+}
+
+.side__bar__menu li a {
+  text-decoration: none;
+  color: #f5f6fa;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.side__bar__menu li:hover {
+  transform: scale(2);
+  transform: translate(1rem);
+}
+
+.side__bar__menu__icon {
+  height: 22px;
+  width: 22px;
+  color: #f5f6fa;
+}
+
+/* Adding active classes for side bar */
+
+.side__bar--active {
+  transform: translate(0rem);
+  filter: opacity(1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+}
